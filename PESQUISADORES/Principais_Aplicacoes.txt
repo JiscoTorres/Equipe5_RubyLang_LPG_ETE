@@ -1,0 +1,9 @@
+Onde a linguagem é mais utilizada?
+
+**A linguagem de programação Ruby é usada no desenvolvimento de softwares, principalmente em aplicações web.
+
+**Muitas aplicações famosas utilizam o Ruby, como os sites Airbnb e SoundCloud, a rede social Twitch e o site
+ de streaming de séries e filmes Hulu.
+
+**O Ruby serve para criar diversos programas para desktop. Hoje, ela é uma das linguagens 
+ mais utilizadas para desenvolvimento de aplicações back-end do mundo. 
