@@ -11,7 +11,7 @@ Repositório das aulas de programação do curso de linguagem de programação d
 ### Equipe:
 - Isadora de Oliveira Rafael;
 - João Francisco Torres;
-- João Gabriel Silva;
+- João Gabriel de Almeida Silva;
 - Yasmin Vasconcelos Leite.
 <br></br>
 
