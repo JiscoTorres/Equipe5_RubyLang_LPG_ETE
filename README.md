@@ -18,4 +18,8 @@ Repositório das aulas de programação do curso de linguagem de programação d
 
 ### Linguagem:
 - RUBY.
+
+<br></br>
  
+### Ferramenta (IDE):
+- RubyMine |©2000-2022 JetBrains s.r.o.|  ![RubyMine](https://img.shields.io/badge/-RubyMine-05122A?style=flat&logo=ruby)&nbsp;
