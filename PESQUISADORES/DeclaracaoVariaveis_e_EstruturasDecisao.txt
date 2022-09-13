@@ -1,0 +1,118 @@
+Ruby é uma linguagem diferenciada por ser puramente orientada a objeto, simplificada e poderosa sintaxe
+cheia de recursos tornando muito fácil manipular objetos do tipo string, integer e float.
+
+- Strings: Um objeto String mantém e manipula uma sequência arbitrária de bytes, normalmente representando caracteres;
+   -> Não possui tamanho fixo em bytes por variável!
+
+- Integers: Esta classe é a base para as duas classes concretas que sustentam números inteiros, Bignum e Fixnum;
+   -> Não possui tamanho fixo em bytes por variável!
+
+- Floats: Objetos flutuantes representam números reais inexatos utilizando precisão de dupla representação de ponto 
+flutuante da arquitetura nativa;
+   -> Não possui tamanho fixo em bytes por variável!
+
+-------------------------------------------------------------------------------------------------------------------------------
+
+
+EXEMPLO: 
+
+	#!/usr/bin/env ruby
+	# Desenvolvimento Aberto
+	# Variaveis.rb
+ 
+	# Inteiros
+	2.times() {puts "Contagem Regressiva"}
+ 
+	puts "\nContando..."
+	5.downto(1) {|x| puts x}
+	puts "Booommm!!!"
+ 
+	# Flutuantes
+	puts "\nFlutuantes"
+	float = 5.to_f
+ 
+	puts "Numero flutuante: " + String(float) + " Adicionando 4.3: Total= " + String(float + 4.3)
+ 
+	# Strings
+	puts "\nObjetos Strings\n"
+	puts "desenvolvimento".capitalize + " " + "aberto".capitalize
+	puts "desenvolvimento".upcase
+	puts "ABERTO".downcase
+
+
+
+------------------------------------------------------------------------------------------------------------------------------
+
+As Estruturas de Decisão tem o objetivo de controlar justamente o fluxo de execução da aplicação.Os operadores lógicos
+farão parte das condições:
+
+-> Operadores aritméticos
+ São métodos dos objetos que representam números.Se essa chamada for feita, por exemplo, em uma
+ instância de um objeto Fixnum, a resposta conterá o seguinte:
+  :+, :-, :*, :/
+O objeto reponde aos métodos + (adição) – (subtração) * (multiplicação) e / (divisão), que podem, 
+inclusive, serem sobrescritos mudando o seu comportamento. A chamada a esses métodos é feita de forma transparente, 
+o que faz com que o desenvolvedor imagine o método como um operador.
+
+----------------------------------------Exemplos com operadores lógicos-----------------------------------------------
+	irb(main):001:0> 10 < 8 and 7 > 5
+	=> false
+	irb(main):002:0> 8 == 9 or 6 > 3
+	=> true
+	irb(main):003:0> 10 > 9 && 1 > 0
+	=> true
+	irb(main):004:0> 7 == 7 || 6 > 8
+	=> true
+	irb(main):005:0> not(10 == 10)
+	=> false
+	irb(main):006:0> !false
+	=> true
+
+----------------------------------------------Estruturas de decisão-----------------------------------------------
+-> IF
+Ex.
+	puts "Informe a sua idade"
+	idade = gets.to_i
+	if idade < 0
+ 	puts "essa não é uma idade válida"
+	end
+
+A primeira instrução no código solicita ao usuário que digite a idade do mesmo e em seguida
+o valor retornado pelo método gets é convertido em um inteiro através da chamada ao método to_i
+e é armazenado na variável idade. Na linha 3 é vista a instrução if que “pergunta” se a idade digitada
+é menor que zero, ou seja, se ela é negativa: caso isso seja verdade a mensagem “essa não é uma idade válida”
+será impressa no console.
+
+
+-> ELSE
+Ex.
+	puts "Informe a sua idade"
+	idade = gets.to_i
+	if idade < 0
+ 	puts "essa não é uma idade válida"
+	else
+ 	puts "essa é uma idade válida"
+	end
+
+Quando o usuário digitar uma idade maior que zero ele receberá a mensagem “essa é uma idade válida”.
+
+-> ELSIF: Caso seja necessário validar mais de uma condição, a instrução elsif pode ser usada.
+Ex.
+	puts "Informe a sua idade"
+	idade = gets.to_i
+	if idade >= 0 and idade < 18
+  	puts "ops! você não tem acesso a esse conteúdo"
+	elsif idade >= 18
+  	puts "Olá! seja bem vindo, visitante!"
+	else
+  	puts "Essa não é uma idade válida"
+	end
+
+A instrução if verifica se a idade digitada pelo usuário é maior ou igual a 0 (>=) e (and) < 18.
+Caso essa condição não satisfaça, o interpretador verificará a condição passada para a instrução elsif, 
+que afere se a variável idade é maior ou igual a 18 (>=). Caso essa instrução retorne true (verdadeiro), a
+mensagem “Olá! seja bem vindo, visitante!” será impressa. Em seguida, a instrução else será executada se nenhuma
+das duas instruções anteriores forem verdadeiras - por exemplo, no caso do usuário digitar um valor negativo.
+----------------------------------------------------OBS---------------------------------------------------------------
+
+puts: Serve para imprimir mensagens.
