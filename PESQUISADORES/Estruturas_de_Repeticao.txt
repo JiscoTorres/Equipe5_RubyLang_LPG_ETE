@@ -1,0 +1,130 @@
+
+-> def - Criador de Função. Pode calcular 
+valores e armazená-los em variáveis ​​locais 
+específicas para a função.
+
+def functionname(variable)
+   return <value>
+end
+
+-> return - Esses valores podem 
+ser retornados com a instrução return.
+
+def say_hello(name)
+   var = “Hello, ” + name
+   return var
+end
+
+
+----> A instrução return também pode ser encurtada para funções muito simples em uma única linha
+
+def say_hello(name)
+   return “Hello,” + name
+end
+
+________________________________________
+PARA CHAMAR UMA FUNÇÂO: 
+
+- function param1, param2
+ou
+- function(param1,param2)
+
+
+EX: 
+puts say_hello(“Geek”)
+
+
+_________________________________________
+
+
+ESTRUTURAS DE REPETIÇÂO:
+
+- WHILE:  Podemos usar o a instrução while para 
+executar determinada tarefa um número 
+específico de vezes. 
+A sintaxe para o uso dessa expressão é a 
+seguinte:
+
+while [codicao] do
+    # operação a ser repetida aqui
+  end
+
+
+EX:  Exemplo com While
+
+irb(main):001:0> contador = 0
+  => 0
+  irb(main):002:0> while contador <= 10 do
+  irb(main):003:1* print "#{contador}, "
+  irb(main):004:1> contador += 1
+  irb(main):005:1> end
+  0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, => nil
+
+* irb ficará aguardando que seja digitado algo.
+
+
+
+
+- UNTIL: O bloco de código associado a ela só é executado a menos que determinada
+ condição seja satisfeita, ou seja, para que o código seja executado é necessário 
+que a condição retorne false.Quando ela retornar true o bloco para de ser executado.
+
+until [condicao] do
+    # operação a ser repetida aqui
+  end
+
+EX: Exemplo com Until
+
+irb(main):001:0> contador = 10
+  irb(main):002:0> until contador == 0 do
+  irb(main):003:1* print "#{contador}, "
+  irb(main):004:1> contador -= 1
+  irb(main):005:1> end
+  10, 9, 8, 7, 6, 5, 4, 3, 2, 1, => nil
+
+
+
+
+
+- FOR: A estrutura for é bem semelhante ao while, 
+com a diferença de que tem a declaração da variável, 
+que auxilia as iterações em sua própria estrutura.
+
+for [elemento] in [elementos_a_serem_percorridos] do
+  end
+
+EX: Exemplo com For
+irb(main):001:0> for contador in 10 do
+  irb(main):002:1* print #{contador}, "
+  irb(main):003:1> end
+  NoMethodError: undefined method `each' for 10:Fixnum
+              from (irb):1
+              from /usr/bin/irb:11:in `<main>'
+
+
+
+
+
+- TIMES: A linguagem ruby ainda disponibiliza o iterador chamado times (vezes). 
+Se é necessário executar uma tarefa um número determinado de vezes
+isso pode ser feito com o Times.
+
+irb(main):001:0> 5.times{print "Isadora "}
+ Isadora Isadora Isadora Isadora Isadora => 5
+
+
+EX: Exemplo com times
+
+irb(main):001:0> 5.times do
+  irb(main):002:1* print "Isadora "
+  irb(main):003:1> end
+  Isadora Isadora Isadora Isadora Isadora => 5
+
+
+-> Também é possível usar o iterador times com uma variável contadora ou de iteração. 
+EX: Exemplo com variável
+
+irb(main):001:0> 10.times do |contador|
+irb(main):002:1* print "#{contador} "
+irb(main):003:1> end
+0 1 2 3 4 5 6 7 8 9 => 10
